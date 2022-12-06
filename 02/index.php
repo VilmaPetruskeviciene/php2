@@ -78,3 +78,69 @@ echo '<br>';
 echo '---------------------------------';
 echo '<br>';
 //3. Naudokite funkcija rand(). Sukurkite tris kintamuosius ir naudodamiesi funkcija rand() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
+echo $sk31 = rand(0, 25);
+echo '<br>';
+echo $sk32 = rand(0, 25);
+echo '<br>';
+echo $sk33 = rand(0, 25);
+echo '<br>';
+if ($sk31 > $sk32 && $sk31 < $sk33) {
+    echo $sk31;
+} 
+elseif ($sk31 < $sk32 && $sk31 > $sk33) {
+    echo $sk31;
+}
+elseif ($sk32 > $sk31 && $sk32 < $sk33) {
+    echo $sk32;
+} 
+elseif ($sk32 < $sk31 && $sk32 > $sk33) {
+    echo $sk32;
+}
+elseif ($sk33 > $sk31 && $sk33 < $sk32) {
+    echo $sk33;
+} 
+elseif ($sk33 < $sk31 && $sk33 > $sk32) {
+    echo $sk33;
+}
+
+echo '<br>';
+echo '---------------------------------';
+echo '<br>';
+//4. Įvedami skaičiai -a, b, c –kraštinių ilgiai, trys kintamieji (naudokite ​rand()​ funkcija nuo 1 iki 10). Parašykite PHP programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
+echo $a = rand(1, 10);
+echo '<br>';
+echo $b = rand(1, 10);
+echo '<br>';
+echo $c = rand(1, 10);
+echo '<br>';
+if ($a + $b > $c && $a + $c > $b && $b + $c > $a) {
+    echo 'Galima sudaryti trikampi.';
+} else {
+    echo 'Negalima sudaryti trikampio.';
+}
+
+echo '<br>';
+echo '---------------------------------';
+echo '<br>';
+//5. Sukurkite keturis kintamuosius ir ​rand()​ funkcija sugeneruokite jiems reikšmes nuo 0 iki 2. Suskaičiuokite kiek yra nulių, vienetų ir dvejetų. (sprendimui masyvo nenaudoti).
+echo $sk51 = rand(0, 2);
+echo '<br>';
+echo $sk52 = rand(0, 2);
+echo '<br>';
+echo $sk53 = rand(0, 2);
+echo '<br>';
+echo $sk54 = rand(0, 2);
+echo '<br>';
+
+
+echo '<br>';
+echo '---------------------------------';
+echo '<br>';
+//6. Naudokite funkcija rand(). Sugeneruokite atsitiktinį skaičių nuo 1 iki 6 ir jį atspausdinkite atitinkame h tage. Pvz skaičius 3- rezultatas: <h3>3</h3>
+$sk61 = rand(1, 6);
+echo "<h$sk61>$sk61</h$sk61>";
+
+echo '<br>';
+echo '---------------------------------';
+echo '<br>';
+//7. Naudokite funkcija rand(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti žali, 0 - raudonas, didesni už 0 mėlyni. 
