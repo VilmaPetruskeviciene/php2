@@ -32,6 +32,9 @@ if (($dalyvis1 + $dalyvis2) > 6 || $dalyvis1 === $dalyvis2) {
 
 echo '<br>';
 
+//Jonas ir Petras žaidžiai šaškėm. Petras surenka taškų kiekį nuo 10 iki 20, Jonas surenka taškų kiekį nuo 5 iki 25. Išvesti žaidėjų vardus su taškų kiekiu ir
+//“Laimėjo: laimėtojo vardas”;
+//Taškų kiekį generuokite funkcija rand();
 $Jonas = rand(5, 25);
 $Petras = rand(10, 20);
 if ($Jonas > $Petras) {
