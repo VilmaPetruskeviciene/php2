@@ -46,4 +46,35 @@ if ($Jonas > $Petras) {
 }
 
 echo '<br>';
+echo '---------------------------------';
+//1. Kintamieji ir sąlygos
+//Uždavinių sprendimui nenaudoti, masyvų, ciklų ir savo parašytų funkcijų. PHP funkcijas žinoma naudokite (pageidautina).
+echo '---------------------------------';
+echo '<br>';
+//1. Sukurkite 4 kintamuosius, kurie saugotų jūsų vardą, pavardę, gimimo metus ir šiuos metus (nebūtinai tikrus). Parašykite kodą, kuris pagal gimimo metus paskaičiuotų jūsų amžių ir naudodamas vardo ir pavardės kintamuosius atspausdintų tokį sakinį :
+//"Aš esu Vardenis Pavardenis. Man yra XX metai(ų)".
+$vardas = 'Vilma';
+$pavarde = 'Vilma';
+$gimimoMetai = 2000;
+$dabarMetai = 2022;
+$amzius = $dabarMetai - $gimimoMetai;
+echo "Aš esu $vardas $pavarde. Man yra $amzius metai(ų).";
 
+echo '<br>';
+echo '---------------------------------';
+echo '<br>';
+//2. Naudokite funkcija rand(). Sukurkite du kintamuosius ir naudodamiesi funkcija rand() jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+$skaicius1 = rand(0, 4);
+$skaicius2 = rand(0, 4);
+if ($skaicius1 == 0 || $skaicius2 == 0) {
+    echo 'Dalyba is nulio negalima.';
+} elseif ($skaicius1 > $skaicius2) {
+    echo round(($skaicius1 / $skaicius2), 2);
+} else {
+    echo round(($skaicius2 / $skaicius1), 2);
+}
+
+echo '<br>';
+echo '---------------------------------';
+echo '<br>';
+//3. Naudokite funkcija rand(). Sukurkite tris kintamuosius ir naudodamiesi funkcija rand() jiems priskirkite atsitiktines reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
