@@ -131,7 +131,14 @@ echo $sk53 = rand(0, 2);
 echo '<br>';
 echo $sk54 = rand(0, 2);
 echo '<br>';
-
+$nuliai = 0;
+$vienetai = 0;
+$dvejetai = 0;
+$sk51 == 0 ? $nuliai++ : ($sk51 == 1 ? $vienetai++ : $dvejetai++);
+$sk52 == 0 ? $nuliai++ : ($sk52 == 1 ? $vienetai++ : $dvejetai++);
+$sk53 == 0 ? $nuliai++ : ($sk53 == 1 ? $vienetai++ : $dvejetai++);
+$sk54 == 0 ? $nuliai++ : ($sk54 == 1 ? $vienetai++ : $dvejetai++);
+echo "Nuliu yra $nuliai, vienetu yra $vienetai, dvejetu yra $dvejetai.";
 
 echo '<br>';
 echo '---------------6------------------';
