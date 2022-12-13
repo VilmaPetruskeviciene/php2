@@ -154,7 +154,13 @@ echo '<br>';
 $sk71 = rand(-10, 10);
 $sk72 = rand(-10, 10);
 $sk73 = rand(-10, 10);
+$color71 = $sk71 < 0 ? 'green' : ($sk71 > 0 ? 'blue' : 'red');
+$color72 = $sk72 < 0 ? 'green' : ($sk72 > 0 ? 'blue' : 'red');
+$color73 = $sk73 < 0 ? 'green' : ($sk73 > 0 ? 'blue' : 'red');
 
+echo "<h2 style=\"color: $color71;\">$sk71 </h2>";
+echo "<h2 style=\"color: $color72;\">$sk72 </h2>";
+echo "<h2 style=\"color: $color73;\">$sk73</h2>";
 
 echo '<br>';
 echo '---------------8------------------';
@@ -237,3 +243,8 @@ if (($val + $minLikutis) > 23) {
     $val2 = $val + $minLikutis; 
 }
 echo sprintf('%02s', $val2) . ' : ' . sprintf('%02s', $min2) . ' : ' . sprintf('%02s', $sek2);
+
+echo '<br>';
+echo '-------------11--------------------';
+echo '<br>';
+//11. Naudokite funkcija rand(). Sugeneruokite 6 kintamuosius su atsitiktinem reikšmėm nuo 1000 iki 9999. Atspausdinkite reikšmes viename strige, išrūšiuotas nuo didžiausios iki mažiausios, atskirtas tarpais. Naudoti ciklų ir masyvų NEGALIMA.
