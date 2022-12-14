@@ -35,3 +35,12 @@ echo $raides3;
 echo '<br>';
 echo '----------------4-----------------------';
 echo '<br>';
+//4. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+$vardas4 = 'Jonas';
+$pavarde4 = 'Jonaitis';
+$raides4 = substr($vardas4,(strlen($vardas4)-3),3).substr($pavarde4,(strlen($pavarde4)-3),3);
+echo $raides4;
+
+echo '<br>';
+echo '----------------5-----------------------';
+echo '<br>';
