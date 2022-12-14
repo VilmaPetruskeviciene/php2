@@ -24,5 +24,14 @@ echo strtoupper("$vardas2 ");
 echo strtolower($pavarde2);
 
 echo '<br>';
-echo '----------------2-----------------------';
+echo '----------------3-----------------------';
+echo '<br>';
+//3. Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+$vardas3 = 'Jonas';
+$pavarde3 = 'Jonaitis';
+$raides3 = substr($vardas3,0,1).substr($pavarde3,0,1);
+echo $raides3;
+
+echo '<br>';
+echo '----------------4-----------------------';
 echo '<br>';
