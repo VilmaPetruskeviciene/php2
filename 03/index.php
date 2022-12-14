@@ -44,3 +44,11 @@ echo $raides4;
 echo '<br>';
 echo '----------------5-----------------------';
 echo '<br>';
+//5. Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+$str5 = 'An American in Paris';
+$reg5 = '/[Aa]/m';
+echo preg_replace($reg5, '*', $str5);
+
+echo '<br>';
+echo '----------------6-----------------------';
+echo '<br>';
