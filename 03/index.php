@@ -80,7 +80,7 @@ $str8 = 'Star Wars: Episode '.str_repeat(' ', rand(0,5)). rand(1,9) . ' - A New 
 echo $str8;
 echo '<br>';
 preg_match_all('#[1-9]#', $str8, $match);
-print_r($match[0]);
+print_r($match[0][0]);
 
 echo '<br>';
 echo '----------------9-----------------------';
@@ -102,3 +102,12 @@ echo sizeof($match92[0]);
 echo '<br>';
 echo '----------------10-----------------------';
 echo '<br>';
+//10. Parašyti kodą, kuris generuotų atsitiktinį stringą iš lotyniškų mažųjų raidžių. Stringo ilgis 3 simboliai.
+$length10 = 3;
+$str10 = substr(str_shuffle('abcdefghijklmnopqrstuvwxyz'), 0, $length10);
+echo $str10;
+
+echo '<br>';
+echo '----------------11-----------------------';
+echo '<br>';
+//11. Parašykite kodą, kuris generuotų atsitiktinį stringą su 10 atsitiktine tvarka išdėliotų žodžių, o žodžius generavimui imtų iš 9-me uždavinyje pateiktų dviejų stringų. Žodžiai neturi kartotis. (reikės masyvo)
