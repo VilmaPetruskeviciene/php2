@@ -79,10 +79,26 @@ echo '<br>';
 $str8 = 'Star Wars: Episode '.str_repeat(' ', rand(0,5)). rand(1,9) . ' - A New Hope';
 echo $str8;
 echo '<br>';
-preg_replace('#[1-9]#', '', $str8);
 preg_match_all('#[1-9]#', $str8, $match);
 print_r($match[0]);
 
 echo '<br>';
 echo '----------------9-----------------------';
+echo '<br>';
+//9. Suskaičiuoti kiek stringe “Don't Be a Menace to South Central While Drinking Your Juice in the Hood” yra žodžių trumpesnių arba lygių nei 5 raidės. Pakartokite kodą su stringu “Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale”.
+$str91 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+$str92 = 'Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale';
+$count91 = 0;
+preg_match_all('/[\S]{5,}/', $str91, $match91);
+//print_r($match91[0]);
+echo '<br>';
+echo sizeof($match91[0]);
+echo '<br>';
+preg_match_all('/[\S]{5,}/', $str92, $match92);
+//print_r($match92[0]);
+echo '<br>';
+echo sizeof($match92[0]);
+
+echo '<br>';
+echo '----------------10-----------------------';
 echo '<br>';
