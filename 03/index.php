@@ -59,3 +59,19 @@ echo (substr_count($str6,'A') + substr_count($str6,'a'));
 echo '<br>';
 echo '----------------7-----------------------';
 echo '<br>';
+//7. Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+$str71 = 'An American in Paris';
+$str72 = 'Breakfast at Tiffany\'s';
+$str73 = '2001: A Space Odyssey';
+$str74 = 'It\'s a Wonderful Life';
+echo preg_replace('#[aeiouy]{1}#i', '', $str71);
+echo '<br>';
+echo preg_replace('#[aeiouy]{1}#i', '', $str72);
+echo '<br>';
+echo preg_replace('#[aeiouy]{1}#i', '', $str73);
+echo '<br>';
+echo preg_replace('#[aeiouy]{1}#i', '', $str74);
+
+echo '<br>';
+echo '----------------8-----------------------';
+echo '<br>';
