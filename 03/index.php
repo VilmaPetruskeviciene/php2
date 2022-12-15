@@ -75,3 +75,14 @@ echo preg_replace('#[aeiouy]{1}#i', '', $str74);
 echo '<br>';
 echo '----------------8-----------------------';
 echo '<br>';
+//8. Stringe, kurį generuoja toks kodas: 'Star Wars: Episode '.str_repeat(' ', rand(0,5)). rand(1,9) . ' - A New Hope'; Surasti ir atspausdinti epizodo numerį.
+$str8 = 'Star Wars: Episode '.str_repeat(' ', rand(0,5)). rand(1,9) . ' - A New Hope';
+echo $str8;
+echo '<br>';
+preg_replace('#[1-9]#', '', $str8);
+preg_match_all('#[1-9]#', $str8, $match);
+print_r($match[0]);
+
+echo '<br>';
+echo '----------------9-----------------------';
+echo '<br>';
