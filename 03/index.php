@@ -52,3 +52,10 @@ echo preg_replace($reg5, '*', $str5);
 echo '<br>';
 echo '----------------6-----------------------';
 echo '<br>';
+//6. Sukurti kintamąjį su stringu: “An American in Paris”. Suskaičiuoti visas “a” (didžiąsias ir mažąsias) raides. Rezultatą atspausdinti.
+$str6 = 'An American in Paris';
+echo (substr_count($str6,'A') + substr_count($str6,'a'));
+
+echo '<br>';
+echo '----------------7-----------------------';
+echo '<br>';
